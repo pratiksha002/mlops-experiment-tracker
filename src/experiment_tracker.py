@@ -14,12 +14,23 @@ def log_experiment(experiment_data: dict) -> str:
     experiment_data["experiment_id"] = experiment_id
     experiment_data["timestamp"] = str(datetime.now())
 
-    if os.path.exists(log_file):
-        with open(log_file, "r") as f:
-            logs = json.load(f)
+    logs = []
 
-    else:
-        logs = []
+    if os.path.exists(log_file):
+        try:
+            with open(log_file, "r") as f:
+                content = f.read().strip()
+                if content:
+                    logs = json.loads(content)
+                    if not isinstance(logs, list):
+                        logs = []
+
+        except Exception as e:
+            print("Error reading logs:", e)
+            logs = []
+
+    logs.append(experiment_data)
+
 
     with open(log_file, "w") as f:
         json.dump(logs, f, indent=4)

@@ -1,1 +1,52 @@
-[]
+[
+    {
+        "model": "RandomForest",
+        "parameters": {
+            "n_estimators": 10
+        },
+        "metric": {
+            "rmse": 10.0
+        },
+        "data_version": "dataset_879e8c",
+        "experiment_id": "exp_c5fccf09",
+        "timestamp": "2026-04-30 18:53:08.945256"
+    },
+    {
+        "model": "RandomForest",
+        "parameters": {
+            "n_estimators": 10
+        },
+        "metric": {
+            "rmse": 76.15773105863909
+        },
+        "data_version": "dataset_879e8c",
+        "experiment_id": "exp_40b81397",
+        "timestamp": "2026-04-30 18:57:58.109698"
+    },
+    {
+        "model": "RandomForest",
+        "parameters": {
+            "n_estimators": 10
+        },
+        "metric": {
+            "rmse": 44.721359549995796
+        },
+        "data_version": "dataset_879e8c",
+        "experiment_id": "exp_dc67ebb9",
+        "timestamp": "2026-04-30 19:03:55.743355",
+        "model_path": "models/saved_models/random_forest_exp_dc67ebb9_20260430_190355.pkl"
+    },
+    {
+        "model": "RandomForest",
+        "parameters": {
+            "n_estimators": 10
+        },
+        "metric": {
+            "rmse": 135.09256086106296
+        },
+        "data_version": "dataset_879e8c",
+        "experiment_id": "exp_1728d271",
+        "timestamp": "2026-04-30 19:06:05.827578",
+        "model_path": "models/saved_models/random_forest_exp_1728d271_20260430_190605.pkl"
+    }
+]

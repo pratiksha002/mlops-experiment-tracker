@@ -11,7 +11,7 @@ def generate_hash(df: pd.DataFrame) -> str:
     df_bytes = df.to_csv(index=False).encode()
     return hashlib.md5(df_bytes).hexdigest()
 
-def create_test_version(df: pd.DataFrame, dataset_name="dataset") -> str:
+def create_data_version(df: pd.DataFrame, dataset_name="dataset") -> str:
     os.makedirs(data_version_path, exist_ok=True)
 
     data_hash = generate_hash(df)

@@ -48,5 +48,18 @@
         "experiment_id": "exp_1728d271",
         "timestamp": "2026-04-30 19:06:05.827578",
         "model_path": "models/saved_models/random_forest_exp_1728d271_20260430_190605.pkl"
+    },
+    {
+        "model": "RandomForest",
+        "parameters": {
+            "n_estimators": 10
+        },
+        "metric": {
+            "rmse": 44.721359549995796
+        },
+        "data_version": "dataset_879e8c",
+        "experiment_id": "exp_b4c253d2",
+        "timestamp": "2026-04-30 20:53:53.986361",
+        "model_path": "models/saved_models/random_forest_exp_b4c253d2_20260430_205353.pkl"
     }
 ]

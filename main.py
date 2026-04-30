@@ -8,6 +8,7 @@ from src.model_registry import save_model
 import numpy as np
 from src.experiment_analysis import print_best_experiment
 from src.experiment_analysis import update_experiment_with_model
+from src.predict import predict
 
 df = pd.DataFrame({
     "feature1": [1, 2, 3, 4, 5, 6],
@@ -41,3 +42,10 @@ update_experiment_with_model(experiment_id, model_path)
 print("Model path:", model_path)
 
 print_best_experiment()
+
+test_input = pd.DataFrame({
+    "feature1": [7, 8],
+    "feature2": [70, 80]
+})
+
+predict(test_input)

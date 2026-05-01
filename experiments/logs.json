@@ -1,69 +1,7 @@
 [
     {
-        "model": "RandomForest",
-        "parameters": {
-            "n_estimators": 10
-        },
-        "metric": {
-            "rmse": 10.0
-        },
-        "data_version": "dataset_879e8c",
-        "experiment_id": "exp_c5fccf09",
-        "timestamp": "2026-04-30 18:53:08.945256"
-    },
-    {
-        "model": "RandomForest",
-        "parameters": {
-            "n_estimators": 10
-        },
-        "metric": {
-            "rmse": 76.15773105863909
-        },
-        "data_version": "dataset_879e8c",
-        "experiment_id": "exp_40b81397",
-        "timestamp": "2026-04-30 18:57:58.109698"
-    },
-    {
-        "model": "RandomForest",
-        "parameters": {
-            "n_estimators": 10
-        },
-        "metric": {
-            "rmse": 44.721359549995796
-        },
-        "data_version": "dataset_879e8c",
-        "experiment_id": "exp_dc67ebb9",
-        "timestamp": "2026-04-30 19:03:55.743355",
-        "model_path": "models/saved_models/random_forest_exp_dc67ebb9_20260430_190355.pkl"
-    },
-    {
-        "model": "RandomForest",
-        "parameters": {
-            "n_estimators": 10
-        },
-        "metric": {
-            "rmse": 135.09256086106296
-        },
-        "data_version": "dataset_879e8c",
-        "experiment_id": "exp_1728d271",
-        "timestamp": "2026-04-30 19:06:05.827578",
-        "model_path": "models/saved_models/random_forest_exp_1728d271_20260430_190605.pkl"
-    },
-    {
-        "model": "RandomForest",
-        "parameters": {
-            "n_estimators": 10
-        },
-        "metric": {
-            "rmse": 44.721359549995796
-        },
-        "data_version": "dataset_879e8c",
-        "experiment_id": "exp_b4c253d2",
-        "timestamp": "2026-04-30 20:53:53.986361",
-        "model_path": "models/saved_models/random_forest_exp_b4c253d2_20260430_205353.pkl"
-    },
-    {
-        "model": "LineraRegression",
+        "run_id": "run_a4f871",
+        "model": "LinearRegression",
         "parameters": {
             "copy_X": true,
             "fit_intercept": true,
@@ -72,14 +10,15 @@
             "tol": 1e-06
         },
         "metric": {
-            "rmse": 6.029155041345696e-14
+            "rmse": 4.4938668397781776e-14
         },
         "data_version": "dataset_879e8c",
-        "experiment_id": "exp_1aa38b92",
-        "timestamp": "2026-05-01 15:00:08.310164",
-        "model_path": "models/saved_models/lineraregression_exp_1aa38b92_20260501_150008.pkl"
+        "experiment_id": "exp_50d221c9",
+        "timestamp": "2026-05-01 15:30:44.372030",
+        "model_path": "models/saved_models/linearregression_exp_50d221c9_20260501_153044.pkl"
     },
     {
+        "run_id": "run_a4f871",
         "model": "DecisionTree",
         "parameters": {
             "ccp_alpha": 0.0,
@@ -99,38 +38,23 @@
             "rmse": 100.0
         },
         "data_version": "dataset_879e8c",
-        "experiment_id": "exp_d7d33f2f",
-        "timestamp": "2026-05-01 15:00:08.450487",
-        "model_path": "models/saved_models/decisiontree_exp_d7d33f2f_20260501_150008.pkl"
+        "experiment_id": "exp_f12a0092",
+        "timestamp": "2026-05-01 15:30:44.478388",
+        "model_path": "models/saved_models/decisiontree_exp_f12a0092_20260501_153044.pkl"
     },
     {
+        "run_id": "run_a4f871",
         "model": "RandomForest",
         "parameters": {
-            "bootstrap": true,
-            "ccp_alpha": 0.0,
-            "criterion": "squared_error",
-            "max_depth": null,
-            "max_features": 1.0,
-            "max_leaf_nodes": null,
-            "max_samples": null,
-            "min_impurity_decrease": 0.0,
-            "min_samples_leaf": 1,
-            "min_samples_split": 2,
-            "min_weight_fraction_leaf": 0.0,
-            "monotonic_cst": null,
             "n_estimators": 10,
-            "n_jobs": null,
-            "oob_score": false,
-            "random_state": null,
-            "verbose": 0,
-            "warm_start": false
+            "max_depth": 5
         },
         "metric": {
-            "rmse": 117.04699910719626
+            "rmse": 36.05551275463989
         },
         "data_version": "dataset_879e8c",
-        "experiment_id": "exp_94908b76",
-        "timestamp": "2026-05-01 15:00:08.559896",
-        "model_path": "models/saved_models/randomforest_exp_94908b76_20260501_150008.pkl"
+        "experiment_id": "exp_d98496e3",
+        "timestamp": "2026-05-01 15:30:44.585540",
+        "model_path": "models/saved_models/randomforest_exp_d98496e3_20260501_153044.pkl"
     }
 ]

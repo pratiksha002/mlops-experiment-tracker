@@ -21,16 +21,15 @@ def load_experiments():
         return []
     
 
-def get_best_experiment(metric_name="rmse"):
+def get_best_experiment(metric_name="rmse", run_id = None):
     experiments = load_experiments()
-
-    print("DEBUG: experiments=", experiments)
 
     valid_experiments = [
         exp for exp in experiments
         if "metric" in exp
         and metric_name in exp["metric"]
         and "model_path" in exp
+        and (run_id is None or exp.get("run_id") == run_id)
     ]
 
     if not valid_experiments:
@@ -45,8 +44,8 @@ def get_best_experiment(metric_name="rmse"):
     return best_exp
 
 
-def print_best_experiment(metric_name="rmse"):
-    best = get_best_experiment()
+def print_best_experiment(metric_name="rmse", run_id=None):
+    best = get_best_experiment(metric_name=metric_name, run_id=run_id)
 
     if best is None:
         print("No experiments available.")

@@ -26,6 +26,9 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
 results = train_models(x_train, y_train, x_test, y_test)
 
+import uuid
+run_id = f"run_{uuid.uuid4().hex[:6]}"
+
 for result in results:
     model = result["model"]
     model_name = result["model_name"]
@@ -33,6 +36,7 @@ for result in results:
     params = result["parameters"]
 
     experiment_id = log_experiment({
+        "run_id": run_id,
         "model": model_name,
         "parameters": params,
         "metric": {"rmse": rmse},
@@ -44,7 +48,7 @@ for result in results:
     update_experiment_with_model(experiment_id, model_path)
     print(f"Model saved for {model_name}: {model_path}")
 
-print_best_experiment()
+print_best_experiment(run_id=run_id)
 
 test_input = pd.DataFrame({
 
@@ -52,4 +56,4 @@ test_input = pd.DataFrame({
     "feature2": [70, 80]
 })
 
-predict(test_input)
+predict(test_input, run_id=run_id)

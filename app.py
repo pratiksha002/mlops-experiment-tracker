@@ -27,7 +27,7 @@ if selected_run != "All":
     df = df[df["run_id"] == selected_run]
 
 
-col1, col2 = st.columns([2, 1])
+col1, col2 = st.columns([3, 2])
 
 with col1:
     st.subheader("📊 Experiments")

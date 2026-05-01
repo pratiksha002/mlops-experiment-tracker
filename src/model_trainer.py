@@ -6,7 +6,7 @@ import numpy as np
 
 def train_models(x_train, y_train, x_test, y_test):
     models = {
-        "LineraRegression": LinearRegression(),
+        "LinearRegression": LinearRegression(),
         "DecisionTree": DecisionTreeRegressor(max_depth=5),
         "RandomForest": RandomForestRegressor(n_estimators=10)
     }
@@ -22,7 +22,7 @@ def train_models(x_train, y_train, x_test, y_test):
         results.append({
             "model_name": name,
             "model": model,
-            "rsme": rmse,
+            "rmse": rmse,
             "parameters": model.get_params()
         })
 

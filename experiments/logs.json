@@ -61,5 +61,76 @@
         "experiment_id": "exp_b4c253d2",
         "timestamp": "2026-04-30 20:53:53.986361",
         "model_path": "models/saved_models/random_forest_exp_b4c253d2_20260430_205353.pkl"
+    },
+    {
+        "model": "LineraRegression",
+        "parameters": {
+            "copy_X": true,
+            "fit_intercept": true,
+            "n_jobs": null,
+            "positive": false,
+            "tol": 1e-06
+        },
+        "metric": {
+            "rmse": 6.029155041345696e-14
+        },
+        "data_version": "dataset_879e8c",
+        "experiment_id": "exp_1aa38b92",
+        "timestamp": "2026-05-01 15:00:08.310164",
+        "model_path": "models/saved_models/lineraregression_exp_1aa38b92_20260501_150008.pkl"
+    },
+    {
+        "model": "DecisionTree",
+        "parameters": {
+            "ccp_alpha": 0.0,
+            "criterion": "squared_error",
+            "max_depth": 5,
+            "max_features": null,
+            "max_leaf_nodes": null,
+            "min_impurity_decrease": 0.0,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "min_weight_fraction_leaf": 0.0,
+            "monotonic_cst": null,
+            "random_state": null,
+            "splitter": "best"
+        },
+        "metric": {
+            "rmse": 100.0
+        },
+        "data_version": "dataset_879e8c",
+        "experiment_id": "exp_d7d33f2f",
+        "timestamp": "2026-05-01 15:00:08.450487",
+        "model_path": "models/saved_models/decisiontree_exp_d7d33f2f_20260501_150008.pkl"
+    },
+    {
+        "model": "RandomForest",
+        "parameters": {
+            "bootstrap": true,
+            "ccp_alpha": 0.0,
+            "criterion": "squared_error",
+            "max_depth": null,
+            "max_features": 1.0,
+            "max_leaf_nodes": null,
+            "max_samples": null,
+            "min_impurity_decrease": 0.0,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "min_weight_fraction_leaf": 0.0,
+            "monotonic_cst": null,
+            "n_estimators": 10,
+            "n_jobs": null,
+            "oob_score": false,
+            "random_state": null,
+            "verbose": 0,
+            "warm_start": false
+        },
+        "metric": {
+            "rmse": 117.04699910719626
+        },
+        "data_version": "dataset_879e8c",
+        "experiment_id": "exp_94908b76",
+        "timestamp": "2026-05-01 15:00:08.559896",
+        "model_path": "models/saved_models/randomforest_exp_94908b76_20260501_150008.pkl"
     }
 ]
